@@ -31,7 +31,8 @@ img{
     width: 1000px;
     display:flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap: wrap;
     margin-left:auto;
     margin-right:auto;
 
@@ -43,7 +44,7 @@ img{
     */
 }
 #site-header{
-  
+    flex: 1 100%;
 
     /*
         TODO
@@ -79,6 +80,7 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: dancing script;
     /*
         TODO: 
         - Use the script font: 'Dancing Script' fot this text
@@ -123,7 +125,11 @@ main{
     flex-direction:column;
     width: 700px;
     float:right;
-    margin-right:50%;
+    margin-right:0%;
+    flex: 0 1 50%;
+    z-index: 10;
+    margin-top: -50px;
+    margin-bottom: 30px;
     /*
         TODO: 
         - Flexbox: Set the starting width of this element
@@ -135,6 +141,11 @@ aside{
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
     float:right;
+    flex: 0 1 25%;
+    z-index: 10;
+    margin-top: -50px;
+    margin-bottom: 30px;
+
     /*
         TODO: 
         - Flexbox: Set the starting width of this element
